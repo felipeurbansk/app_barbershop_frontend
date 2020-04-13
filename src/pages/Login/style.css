@@ -1,0 +1,24 @@
+.container-login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-login .img-logo {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+    color: #FFF;
+}
+
+.container-login .content {
+    width: 50%;
+    max-width: 300px;
+}
+
+body {
+    background-color: #000;
+}
