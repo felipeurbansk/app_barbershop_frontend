@@ -12,14 +12,18 @@ input, button, textarea {
     font-family: 'Roboto', sans-serif;
 }
 
-form input {
-    width: 100%;
-    height: 35px;
+form input[type="text"], form input[type="number"], form input[type="email"] {
     color: #333;
-    border: 1px solid #dcdce6;
-    border-radius: 5px;
     background-color: transparent;
+}
+
+.col {
     margin: 10px 0;
+}
+
+form input[type="radio"] {
+    width: 18px;
+    height: 18px;
 }
 
 button {
@@ -33,12 +37,116 @@ button {
     text-align: center;
     font-size: 15px;
     transition: filter .4s;
-    margin-top: 20px;
+    outline: none;
+    text-decoration: none;
 }
 
 button:hover {
     filter: brightness(85%);
 }
 
+.button {
+    height: 40px;
+    background-color: #a76a28;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    transition: color .2s;
+}
+
+.button-default,
+.show>.btn-primary.dropdown-toggle,
+.btn-primary:focus,
+.button-default:hover,
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: #a76a28;
+    border-color: #a76a28;
+}
+
+.dropdown-menu {
+    width: 100%;
+}
+
+.button:hover {
+    color: #ddd;
+    text-decoration: none;
+    outline: none;
+}
+
+.sidebar-nav {
+    background-color: #081214 !important;
+}
+
+.sidebar-nav .user-info {
+    max-width: 100%;
+    height: 60px !important;
+    align-items: center;
+    justify-content: center;
+    cursor: default !important;
+}
+
+.sidebar-nav .user-info .sidenav---navtext---1AE_f{
+    display: flex;
+    flex-direction: column ;
+    line-height: initial;
+    padding-top: 8px;
+}
 
 
+.sidebar-nav .user-image {
+    width: 100%;
+    max-width: 50px;
+    margin-top: 5px;
+}
+
+.sidebar-nav .user-field {
+    margin-left: 15px;
+}
+
+.sidebar-nav .user-name {
+    font-size: 18px;
+}
+
+.sidebar-nav .user-email {
+    font-size: 13px;
+    word-wrap: break-word;
+}
+.table thead {
+    background-color: #081214;
+}
+
+.table {
+    background-color: rgba(78,56,56,1);
+    border-radius: 7px;
+    color: #FFF;
+}
+
+.table tbody tr {
+    transition: color 0.2s;
+}
+
+.table tbody tr:hover {
+    color: #a76a28;
+}
+
+.react-datepicker-wrapper {
+    width: 100% !important;
+}
+
+.datepicker {
+    width: 100%;
+    padding: 6px;
+    padding-left: 13px;
+    color: #495057 !important;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+}
+
+.text-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px 0;
+}

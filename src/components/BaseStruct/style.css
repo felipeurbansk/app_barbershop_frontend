@@ -1,0 +1,14 @@
+.base-struct {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+}
+
+.base-struct .base-struct-body {
+    width: 100%;
+    display: block;
+    padding-left: 65px;
+}
